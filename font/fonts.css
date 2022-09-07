@@ -1,0 +1,42 @@
+/* DM Sans Font Faces */
+@font-face {
+  font-family: "BrandonText-Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("BrandonText-Thin.otf");
+}
+
+@font-face {
+  font-family: "BrandonText-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("BrandonText-Light.otf");
+}
+
+@font-face {
+  font-family: "BrandonText-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("BrandonText-Regular.otf");
+}
+
+@font-face {
+  font-family: "BrandonText-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("BrandonText-Medium.otf");
+}
+
+@font-face {
+  font-family: "BrandonText-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("BrandonText-Black.otf");
+}
+
+@font-face {
+  font-family: "BrandonText-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("BrandonText-Bold.otf");
+}

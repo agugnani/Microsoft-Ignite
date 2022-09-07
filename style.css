@@ -1,0 +1,399 @@
+/* Font file CSS */
+@import "font/fonts.css";
+
+/* Roots */
+:root {
+  --blue: #0067b8;
+  --headblack: #000;
+  --black: #333;
+  --white: #fff;
+  --gray: #7b7b7b;
+}
+
+/* Scroll Behaviour */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Default CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "BrandonText-Regular";
+  font-weight: normal;
+  font-style: normal;
+  color: var(--black);
+  letter-spacing: 0.4px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "BrandonText-Medium";
+  font-weight: normal;
+  color: var(--blue);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: "BrandonText-Medium";
+  font-weight: normal;
+  color: var(--black);
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-family: "BrandonText-Regular";
+  font-weight: normal;
+  color: var(--headblack);
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Grid Classes */
+.grid {
+  display: grid;
+}
+
+.place-center {
+  place-items: center;
+}
+
+/* Flex Classes */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+/* Reusable CLasses */
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.block {
+  display: block;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+/* Sections */
+.logo {
+  width: 240px;
+}
+
+nav li a {
+  color: #fff;
+  font-size: 1.3rem;
+  transition: 0.2s ease;
+}
+
+nav li a:hover {
+  color: rgb(255, 255, 255, 0.8);
+}
+
+header {
+  padding: 25px 40px;
+}
+
+section {
+  padding: 80px 40px;
+}
+
+.banner {
+  background-image: url(assets/Banner.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+}
+
+.banner .intro {
+  margin: auto 0;
+}
+
+.banner .intro h1:before {
+  content: "Join";
+  font-size: 2.5rem;
+  line-height: 1;
+  display: block;
+  cursor: text;
+  color: var(--black);
+}
+
+.banner p.about {
+  font-size: 1.8rem;
+}
+
+.time svg {
+  width: 30px;
+  height: 30px;
+}
+
+.button {
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0px 8px 30px rgba(73, 73, 73, 0.15);
+  padding: 15px 20px;
+  text-align: center;
+  min-width: 160px;
+  max-width: fit-content;
+  font-size: 1.1rem;
+}
+
+.button.one,
+.button.two:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.button.two,
+.button.one:hover {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.summary > div {
+  grid-template-columns: 1fr 1fr;
+}
+
+.divider {
+  max-width: 130px;
+  border: 0;
+  border-top: 3px solid var(--blue);
+  margin: 25px 0;
+}
+
+.agenda {
+  background: linear-gradient(89.81deg, #ffffff -19.89%, #e9f3ff 102.07%);
+}
+
+.agenda h2,
+.speaker h2 {
+  color: var(--blue);
+}
+
+.tabs .button {
+  padding: 10px 20px;
+}
+
+.points {
+  max-width: 1200px;
+  margin: -10px auto;
+}
+
+.points .time {
+  flex-basis: 45%;
+  color: var(--gray);
+}
+
+.vertical-divider {
+  display: flex;
+}
+
+.vertical-divider hr {
+  width: 1px;
+  border: 0;
+  border-right: 3px solid var(--blue);
+  height: 100%;
+  min-height: 110px;
+  display: block;
+}
+
+.points:nth-child(3) .vertical-divider:before,
+.vertical-divider:after {
+  content: "\f111";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--blue);
+  margin-bottom: -10px;
+}
+
+.points:nth-child(odd) .time {
+  text-align: right;
+}
+
+.points:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.points:nth-child(even) .detail {
+  text-align: right;
+}
+
+.points:nth-child(even) .time {
+  text-align: left;
+}
+
+.points:last-child .vertical-divider:after {
+  content: "";
+}
+
+.points:last-child hr {
+  display: none;
+}
+
+.vertical-divider:before {
+  margin-bottom: -4px;
+}
+
+.vertical-divider:after {
+  margin-top: -4px;
+}
+
+.points .detail {
+  flex-basis: 45%;
+}
+
+.speaker {
+  padding-bottom: 0;
+}
+
+.speaker h4 span {
+  font-size: 1.1rem;
+  color: var(--black);
+}
+
+.speaker li {
+  flex: 1;
+  min-width: 175px;
+}
+
+.venue {
+  background-image: url(assets/venue.png);
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  padding: 350px 40px 120px;
+}
+
+.icon-bg-round {
+  background-color: var(--white);
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+}
+
+.icon-bg-round svg {
+  width: 50px;
+  height: 50px;
+}
+
+.venue h2 {
+  color: var(--white);
+  line-height: 1;
+}
+
+.venue p {
+  color: var(--white);
+  font-size: 1.3rem;
+}
+
+.venue li {
+  flex: 1;
+  min-width: 250px;
+}
+
+footer {
+  padding: 20px 40px;
+}
+
+.copyright {
+  font-size: 1rem;
+}

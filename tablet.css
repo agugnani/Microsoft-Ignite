@@ -1,0 +1,23 @@
+.banner .intro h1 {
+  font-size: 3rem;
+}
+.banner .intro h1:before {
+  font-size: 2rem;
+}
+
+.agenda .points {
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.speaker ul {
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.venue ul {
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
