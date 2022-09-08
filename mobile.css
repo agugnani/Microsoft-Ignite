@@ -1,12 +1,16 @@
+section {
+  padding: 40px 15px;
+}
+
 .banner {
   background-size: contain;
   min-height: auto;
 }
 .logo {
-  width: 200px;
+  width: 160px;
 }
 .banner .intro {
-  margin: 240px 0 0;
+  margin: 180px 0 0;
   padding: 40px;
 }
 
