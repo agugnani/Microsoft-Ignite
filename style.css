@@ -244,6 +244,10 @@ section {
   font-size: 1.1rem;
 }
 
+.cta-buttons .button {
+  min-width: 235px;
+}
+
 .button.one,
 .button.two:hover {
   background-color: var(--blue);
