@@ -176,6 +176,15 @@ li {
   width: 240px;
 }
 
+input#menu,
+input#menu ~ label {
+  display: none;
+}
+
+.hamburger.logo {
+  display: none;
+}
+
 nav li a {
   color: #fff;
   font-size: 1.3rem;
@@ -396,4 +405,84 @@ footer {
 
 .copyright {
   font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .hamburger.logo {
+    display: block;
+  }
+  input#menu ~ label {
+    width: 20px;
+    height: 2px;
+    background-color: var(--white);
+    display: block;
+    position: relative;
+    transition: all 0.2s ease-out;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  input#menu ~ label::before,
+  input#menu ~ label::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: var(--white);
+    transition: all 0.2s ease-out;
+  }
+
+  input#menu ~ label::before {
+    top: 7px;
+  }
+
+  input#menu ~ label::after {
+    top: -7px;
+  }
+
+  input#menu:checked ~ nav {
+    right: 0;
+  }
+
+  input#menu:checked ~ label {
+    background-color: transparent;
+  }
+
+  input#menu:checked ~ label:before {
+    transform: rotate(-45deg);
+    background-color: var(--black);
+    top: 0;
+  }
+
+  input#menu:checked ~ label:after {
+    transform: rotate(45deg);
+    background-color: var(--black);
+    top: 0;
+  }
+
+  input#menu ~ label {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    display: none;
+    background-color: #fff;
+    padding: 60px 20px;
+    transition: right 0.3s ease-in;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li a {
+    color: var(--black);
+  }
+  nav li a:hover {
+    color: var(--blue);
+  }
 }

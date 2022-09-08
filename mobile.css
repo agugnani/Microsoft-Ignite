@@ -1,3 +1,15 @@
+.banner {
+  background-size: contain;
+  min-height: auto;
+}
+.logo {
+  width: 200px;
+}
+.banner .intro {
+  margin: 240px 0 0;
+  padding: 40px;
+}
+
 .banner .intro h1 {
   font-size: 3rem;
 }
